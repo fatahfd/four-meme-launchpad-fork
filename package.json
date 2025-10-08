@@ -1,0 +1,63 @@
+{
+  "name": "@four.meme-launchpad/core",
+  "version": "1.0.0",
+  "description": "Professional token launchpad platform for BNB Chain",
+  "private": true,
+  "workspaces": [
+    "smartcontract",
+    "backend", 
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:smartcontract && npm run build:backend && npm run build:frontend",
+    "build:smartcontract": "cd smartcontract && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:smartcontract && npm run test:backend && npm run test:frontend",
+    "test:smartcontract": "cd smartcontract && npm test",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "deploy": "cd smartcontract && npm run deploy",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend && npm run lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "clean": "rm -rf node_modules && cd smartcontract && rm -rf node_modules && cd ../backend && rm -rf node_modules && cd ../frontend && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "meme",
+    "token",
+    "launchpad",
+    "bnb-chain",
+    "pancakeswap",
+    "defi",
+    "cryptocurrency",
+    "blockchain"
+  ],
+  "author": "Four.Meme Launchpad Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/four-meme-launchpad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/four-meme-launchpad/issues"
+  },
+  "homepage": "https://four-meme-launchpad.com"
+}

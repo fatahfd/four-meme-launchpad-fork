@@ -1,0 +1,53 @@
+{
+  "name": "@four.meme-launchpad/smartcontract",
+  "version": "1.0.0",
+  "description": "Smart contracts for Four.Meme Launchpad",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.ts --network",
+    "deploy:bsc": "hardhat run scripts/deploy.ts --network bsc",
+    "deploy:bsc-testnet": "hardhat run scripts/deploy.ts --network bsc-testnet",
+    "verify": "hardhat verify --network",
+    "size": "hardhat size-contracts",
+    "gas": "REPORT_GAS=true hardhat test",
+    "clean": "hardhat clean",
+    "node": "hardhat node",
+    "fork": "hardhat node --fork https://bsc-dataseed.binance.org/",
+    "coverage": "hardhat coverage"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "@chainlink/contracts": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@typechain/ethers-v6": "^0.4.3",
+    "@typechain/hardhat": "^8.0.2",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "ethers": "^6.8.1",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.1",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart-contracts",
+    "bnb-chain",
+    "pancakeswap",
+    "defi"
+  ],
+  "author": "Four.Meme Launchpad Team",
+  "license": "MIT"
+}
