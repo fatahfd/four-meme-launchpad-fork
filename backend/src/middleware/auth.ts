@@ -12,33 +12,7 @@ export interface AuthRequest extends Request {
 }
 
 export const authMiddleware = (req: AuthRequest, res: Response, next: NextFunction): void => {
-  try {
-    const token = req.header('Authorization')?.replace('Bearer ', '');
-    
-    if (!token) {
-      throw new AppError('Access denied. No token provided.', 401);
-    }
-
-    const jwtSecret = process.env.JWT_SECRET;
-    if (!jwtSecret) {
-      throw new AppError('JWT secret not configured', 500);
-    }
-
-    const decoded = jwt.verify(token, jwtSecret) as any;
-    req.user = decoded;
-    
-    next();
-  } catch (error) {
-    logger.error('Auth middleware error:', error);
-    
-    if (error instanceof jwt.JsonWebTokenError) {
-      next(new AppError('Invalid token', 401));
-    } else if (error instanceof jwt.TokenExpiredError) {
-      next(new AppError('Token expired', 401));
-    } else {
-      next(error);
-    }
-  }
+  /* Contact Me */
 };
 
 export const adminMiddleware = (req: AuthRequest, res: Response, next: NextFunction): void => {

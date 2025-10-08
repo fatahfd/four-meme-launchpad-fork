@@ -89,49 +89,7 @@ contract ProfessionalMemeToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, 
         address _liquidityFeeRecipient,
         uint256 liquidityAmount
     ) ERC20(name, symbol) Ownable(initialOwner) {
-        require(totalSupply > 0, "Invalid total supply");
-        require(_platformFeeRecipient != address(0), "Invalid platform fee recipient");
-        require(_liquidityFeeRecipient != address(0), "Invalid liquidity fee recipient");
-        require(_tokenStartTime >= block.timestamp, "Invalid start time");
-        
-        // Set metadata
-        tokenImage = _tokenImage;
-        tokenDescription = _tokenDescription;
-        tokenWebsite = _tokenWebsite;
-        tokenTwitter = _tokenTwitter;
-        tokenTelegram = _tokenTelegram;
-        tokenTag = _tokenTag;
-        tokenStartTime = _tokenStartTime;
-        
-        // Set fee recipients
-        platformFeeRecipient = _platformFeeRecipient;
-        liquidityFeeRecipient = _liquidityFeeRecipient;
-        
-        // Set max transaction and wallet amounts (5% of total supply)
-        maxTransactionAmount = (totalSupply * 500) / 10000;
-        maxWalletAmount = (totalSupply * 500) / 10000;
-        
-        // Mint tokens
-        _mint(initialOwner, totalSupply - liquidityAmount);
-        if (liquidityAmount > 0) {
-            _mint(_liquidityFeeRecipient, liquidityAmount);
-        }
-        
-        // Exclude owner and fee recipients from fees and limits
-        isExcludedFromFee[initialOwner] = true;
-        isExcludedFromFee[_platformFeeRecipient] = true;
-        isExcludedFromFee[_liquidityFeeRecipient] = true;
-        isExcludedFromFee[address(this)] = true;
-        
-        isExcludedFromMaxTransaction[initialOwner] = true;
-        isExcludedFromMaxTransaction[_platformFeeRecipient] = true;
-        isExcludedFromMaxTransaction[_liquidityFeeRecipient] = true;
-        isExcludedFromMaxTransaction[address(this)] = true;
-        
-        isExcludedFromMaxWallet[initialOwner] = true;
-        isExcludedFromMaxWallet[_platformFeeRecipient] = true;
-        isExcludedFromMaxWallet[_liquidityFeeRecipient] = true;
-        isExcludedFromMaxWallet[address(this)] = true;
+        /* Contact Me */
     }
     
     /**
@@ -283,38 +241,7 @@ contract ProfessionalMemeToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, 
      * @dev Override transfer function to include fee logic
      */
     function _transfer(address from, address to, uint256 amount) internal override(ERC20, ERC20Pausable) {
-        require(!blacklisted[from] && !blacklisted[to], "Blacklisted address");
-        
-        if (!tradingEnabled) {
-            require(isExcludedFromFee[from] || isExcludedFromFee[to], "Trading not enabled");
-        }
-        
-        // Check max transaction amount
-        if (!isExcludedFromMaxTransaction[from] && !isExcludedFromMaxTransaction[to]) {
-            require(amount <= maxTransactionAmount, "Exceeds max transaction amount");
-        }
-        
-        // Check max wallet amount
-        if (!isExcludedFromMaxWallet[to]) {
-            require(balanceOf(to) + amount <= maxWalletAmount, "Exceeds max wallet amount");
-        }
-        
-        // Calculate fees
-        uint256 feeAmount = 0;
-        if (!isExcludedFromFee[from] && !isExcludedFromFee[to] && tradingEnabled) {
-            feeAmount = (amount * (tradingFee + liquidityFee + platformFee)) / 10000;
-        }
-        
-        // Transfer tokens
-        if (feeAmount > 0) {
-            super._transfer(from, address(this), feeAmount);
-            super._transfer(from, to, amount - feeAmount);
-            
-            // Handle fee distribution
-            _distributeFees(feeAmount);
-        } else {
-            super._transfer(from, to, amount);
-        }
+        /* Contact Me */
     }
     
     /**
