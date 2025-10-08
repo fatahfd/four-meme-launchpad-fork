@@ -2,7 +2,7 @@
 
 A professional, secure, and feature-rich token launchpad platform built on BNB Chain, inspired by the original four.meme platform.
 
-## Contact me on Telegram to build your own trading bots
+## Contact me on Telegram to build your own launchpad
 <a href="https://t.me/just_ben_venture" target="_blank">
   <img src="https://img.shields.io/badge/Telegram-@Contact_Me-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Support" />
 </a>
